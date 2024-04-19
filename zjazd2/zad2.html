@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <form action="zad2.php" method="GET">
+        <div>
+            <label for="liczba_osob">Ilość osób:</label>
+            <select name="liczba_osob" id="liczba_osob">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <label for="imie">Imię:</label>
+            <input type="text" id="imie" name="imie" required><br><br>
+
+            <label for="nazwisko">Nazwisko:</label>
+            <input type="text" id="nazwisko" name="nazwisko" required><br><br>
+
+            <label for="adres">Adres:</label>
+            <input type="text" id="adres" name="adres" required><br><br>
+
+            <label for="karta_kredytowa">Dane karty kredytowej:</label>
+            <input type="text" id="karta_kredytowa" name="karta_kredytowa" required><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="data_pobytu">Data pobytu:</label>
+            <input type="date" id="data_pobytu" name="data_pobytu" required><br><br>
+            <label for="godzina_przyjazdu">Godzina przyjazdu:</label>
+            <input type="time" id="godzina_przyjazdu" name="godzina_przyjazdu" required><br><br>
+
+            <label for="klimatyzacja">Klimatyzacja:</label>
+            <input type="checkbox" id="klimatyzacja" name="klimatyzacja"><br><br>
+            <label for="popielniczka">Popielniczka:</label>
+            <input type="checkbox" id="popielniczka" name="popielniczka"><br><br>
+            <label for="lozko_dziecko">Łóżko dla dziecka:</label>
+            <input type="checkbox" id="lozko_dziecko" name="lozko_dziecko"><br><br>
+
+            <div id="dodatkowe_osoby" style="display: none;">
+                <h3>Dane dodatkowych osób:</h3>
+                <label for="imie2">Imię:</label>
+                <input type="text" id="imie2" name="imie2"><br><br>
+
+                <label for="nazwisko2">Nazwisko:</label>
+                <input type="text" id="nazwisko2" name="nazwisko2"><br><br>
+
+                <label for="adres2">Adres:</label>
+                <input type="text" id="adres2" name="adres2"><br><br>
+            </div>
+
+            <input type="button" value="Dodaj dodatkową osobę" onclick="pokazFormularzDodatkowejOsoby()">
+            <br><br>
+
+
+            <input type="submit" value="Podsumuj">
+
+        </div>
+    </form>
+</head>
+<body>
+
+</body>
+</html>
